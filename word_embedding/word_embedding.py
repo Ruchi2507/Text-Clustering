@@ -24,10 +24,10 @@ class WordEmbedding():
 	Attributes:
 	-----------
 	1. input_file_path: Input text file containing sentences, which
-						are to be represented in vector format.
+			    are to be represented in vector format.
 	2. word2vec_model : Path of word2vec pre-trained model.
 	3. word_vector_dim: Dimension of vector to be generated for input 
-						sentence. 
+			    sentence. 
 	'''
 
 	def __init__(self, input_file_path, word2vec_model, word_vector_dim):
@@ -37,10 +37,10 @@ class WordEmbedding():
 		Parameters
 		----------
 		1. input_file_path: Path of Input text file containing sentences,
-                            which are to be represented in vector format.
-        2. word2vec_model : Path of word2vec pre-trained model.
-        3. word_vector_dim: Dimension of vector to be generated for input 
-						    sentence. 
+                	            which are to be represented in vector format.
+        	2. word2vec_model : Path of word2vec pre-trained model.
+        	3. word_vector_dim: Dimension of vector to be generated for input 
+				    sentence. 
 		'''
 		self.input_file_path = input_file_path
 		self.word2vec_model  = word2vec_model
