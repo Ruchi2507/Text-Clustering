@@ -20,9 +20,9 @@ class Clustering():
 	'''
 	This class has the following functionality:
 	1. Find cosine similarity between sentence vectors.
-		- If similarity is greater than a threshold value then 
-		  sentences are marked as similar otherwise not-similar.
-		- Similar sentences constitute a cluster.
+	   - If similarity is greater than a threshold value then 
+	     sentences are marked as similar otherwise not-similar.
+	   - Similar sentences constitute a cluster.
 
 	Attributes:
 	-----------
@@ -30,16 +30,12 @@ class Clustering():
 	                        to be clustered along with the corresponding 
 	                        sentence vector.
 	2. output_dir_path    : Path of output directory.
-	3. threshold		  : Threshold value to be used for clustering.
+	3. threshold	      : Threshold value to be used for clustering.
 	4. representative_vec : Specifies how the representative vector for
-							each cluster is to be computer. 
-	-add    : Add all the vectors in clusters to find representative 
-	          vector.
-	-average: Average of all vectors in clusters is to be used for
-	   		  computing representative vector.
-	5. overlap_cluster	  : If set to False, then no two clusters will 
-							have same sentence.
-	6. word_vector_dim	  : Dimension of vector corresponding to sentence.
+				each cluster is to be computer. 
+	5. overlap_cluster    : If set to False, then no two clusters will 
+				have same sentence.
+	6. word_vector_dim    : Dimension of vector corresponding to sentence.
 	'''
 
 	def __init__(self, embedding_file_path, output_dir_path, threshold, \
@@ -47,19 +43,19 @@ class Clustering():
 		'''
 		This method is called to create an instance of this class.
 
-        Parameters
-        ----------
-        embedding_file       : Path of CSV file, which contains sentences 
-	                           to be clustered along with the corresponding 
-	                           sentence vector.
-	    output_dir_path      : Path of output directory.
-	    Threshold            : Threshold value to be used for clustering.
-	    representative_vec   : Specify whether the representative sentence 
-	    					   of each cluster is to be computed using "add"
-	    					   or "average" of vectors in cluster.
-	    overlap_cluster		 : Specify if overlapping clusters to be generated
+       		Parameters
+        	----------
+        	embedding_file       : Path of CSV file, which contains sentences 
+	        	               to be clustered along with the corresponding 
+	                               sentence vector.
+	    	output_dir_path      : Path of output directory.
+	    	Threshold            : Threshold value to be used for clustering.
+	    	representative_vec   : Specify whether the representative sentence 
+					of each cluster is to be computed using "add"
+	    				or "average" of vectors in cluster.
+	    	overlap_cluster	     : Specify if overlapping clusters to be generated
 	     					   or not.
-	    word_vector_dim		 : Dimension of sentence vector.
+	    	word_vector_dim	     : Dimension of sentence vector.
 		'''
 		self.embedding_file_path = embedding_file_path
 		self.output_dir_path	 = output_dir_path
