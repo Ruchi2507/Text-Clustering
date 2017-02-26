@@ -5,8 +5,8 @@ Advantage: User need not to specify the number of output clusters required.
 Algorithm, will create clusters depending on the percentage of similairty between the sentences.
 
 # Requirements:
-Python: 2.7.8
-gensim: 1.0.0
+- Python: 2.7.8
+- gensim: 1.0.0
 
 # Execution:
 1. Change to the source package "Text-clustering".
@@ -43,4 +43,4 @@ gensim: 1.0.0
 	     average of all the sentence vectors in a cluster.
 	   - Default value is 'average'.
 3. Once config.ini file is updated, execute text-clustering project by using below command:
-	$ python main_executor.py
+	- $ python main_executor.py
