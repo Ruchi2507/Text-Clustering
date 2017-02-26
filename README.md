@@ -9,10 +9,14 @@ Algorithm, will create clusters depending on the percentage of similairty betwee
 - gensim: 1.0.0
 
 # Execution:
-1. Change to the source package "Text-clustering".
-2. Open and edit the config.ini with the desired inputs as specified below:
+1. Download Google news word2vec pre-trained model file from:
+	* https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing
+2. Extract this file in Text-Clustering source package such that bin file is located in directory:
+	* Text-Clustering\GoogleNews-vectors-negative300.bin\GoogleNews-vectors-negative300.bin
+3. Change to the source package directory "Text-clustering".
+4. Open and edit the config.ini with the desired inputs as specified below:
 	1. word2vec_model: 
-	   - Specify path of word2vec pre-trained model file (in bin format) which is 
+	   - Specify path of word2vec pre-trained model file (in bin format downloaded in Step 1) which is 
 	     to be used for converting sentence to vectors.
 	   - Currently Google-news-pretrained vector model of dimension 300 is used.
 	2. threshold:
@@ -42,5 +46,5 @@ Algorithm, will create clusters depending on the percentage of similairty betwee
        - If "average": Representation vector for each cluster is computed by
 	     average of all the sentence vectors in a cluster.
 	   - Default value is 'average'.
-3. Once config.ini file is updated, execute text-clustering project by using below command:
+5. Once config.ini file is updated, execute text-clustering project by using below command:
 	- $ python main_executor.py
